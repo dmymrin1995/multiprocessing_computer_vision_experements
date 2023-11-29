@@ -20,7 +20,7 @@ def run_tracking_in_process(filepath):
 
         for obj_id, obj_cls, box in zip(ids, clses, boxes):
             data_list.append(
-                {"frame": frame, "obj_id": obj_id, "clses": clses, "boxes": boxes}
+                {"frame": frame, "obj_id": obj_id, "cls": obj_cls, "boxes": box}
             )
 
     output_data = pd.DataFrame(data_list)
